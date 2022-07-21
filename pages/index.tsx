@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { FlexCenter } from '../styles/style';
 import Intro from '@components/Intro';
 import Work from '@components/Work';
+import Project from '@components/Project';
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Profile />
       <Intro />
       <Work />
+      <Project />
     </AppLayout>
   );
 };
