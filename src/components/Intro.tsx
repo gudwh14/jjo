@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Container } from '../../styles/style';
+import colors from '@constants/colors';
 
 const profileLinks: Array<{ id: string; link: string }> = [
   {
@@ -86,7 +87,7 @@ const Link = styled.span`
   font-size: 1.2rem;
   margin-right: 1rem;
   font-weight: 300;
-  color: cornflowerblue;
+  color: ${colors.highlight};
 `;
 
 export default Intro;
