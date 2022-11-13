@@ -8,6 +8,7 @@ const profileLinks: Array<{ id: string; link: string }> = [
     link: 'https://www.linkedin.com/in/hyeongjo-cha-624b10244/',
   },
   { id: 'GitHub', link: 'https://github.com/gudwh14' },
+  { id: 'Tech Blog', link: 'https://golfani.github.io/category/front' },
 ];
 
 const introInfos: Array<{ id: string; value: string }> = [
