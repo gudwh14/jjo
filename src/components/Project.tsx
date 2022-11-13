@@ -1,8 +1,16 @@
 import styled from '@emotion/styled';
-import { Container, Title } from '../../styles/style';
+import { Container, Title } from './style';
 import colors from '@constants/colors';
 
-const Projects: Array<{ en: string; ko: string; sub: string; role: string; link: string }> = [
+interface IProject {
+  en: string;
+  ko: string;
+  sub: string;
+  role: string;
+  link: string;
+}
+
+const Projects: Array<IProject> = [
   {
     en: 'MEYOU',
     ko: '미유',
@@ -16,6 +24,13 @@ const Projects: Array<{ en: string; ko: string; sub: string; role: string; link:
     sub: 'MZ세대들을 위한 골프 플랫폼',
     role: 'FE',
     link: 'https://github.com/golfani/golfani-FE',
+  },
+  {
+    en: 'Travelus',
+    ko: '트레블어스',
+    sub: '나만의 여행계획 추천 서비스',
+    role: 'FE',
+    link: 'https://github.com/travleus/TRAVELUS-FE',
   },
 ];
 

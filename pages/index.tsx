@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Profile from '@components/Profile';
 import styled from '@emotion/styled';
-import { FlexCenter } from '../styles/style';
+import { FlexCenter } from '@components/style';
 import Intro from '@components/Intro';
 import Work from '@components/Work';
 import Project from '@components/Project';

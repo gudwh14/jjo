@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Container } from '../../styles/style';
+import { Container } from './style';
 import { keyframes } from '@emotion/react';
 
 function Profile() {
@@ -17,14 +17,14 @@ function Profile() {
 
 const Wrapper = styled(Container)`
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   align-items: center;
   justify-content: center;
 `;
 
 const ProfileImage = styled.img`
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid black;
@@ -48,9 +48,10 @@ const TextRightMoveAnimation = keyframes`
   }`;
 
 const NameText = styled.text`
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
   white-space: nowrap;
   animation: ${TextLeftMoveAnimation} 1s forwards;
   animation-delay: 0.3s;
@@ -58,7 +59,7 @@ const NameText = styled.text`
 
 const TextWrapper = styled.h1`
   margin: 0;
-  font-size: 7rem;
+  font-size: 3rem;
   padding: 0;
   color: white;
   white-space: nowrap;

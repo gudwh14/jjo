@@ -1,12 +1,20 @@
 import styled from '@emotion/styled';
-import { Container, Title } from '../../styles/style';
+import { Container, Title } from './style';
 import '@fontsource/bungee-shade';
 
-const WorkInfos: Array<{ corp: string; ko: string; depart: string; period: string; form: string }> = [
+interface IWork {
+  corp: string;
+  ko: string;
+  depart: string;
+  period: string;
+  form: string;
+}
+
+const WorkInfos: Array<IWork> = [
   {
     corp: 'Samsung Electronics',
     ko: '삼성전자',
-    depart: 'Mobile Experience SW',
+    depart: 'Mobile eXperience(MX) SW',
     period: '2022.07 - now',
     form: '정규직',
   },

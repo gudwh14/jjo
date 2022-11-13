@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
-import { Container } from '../../styles/style';
+import { Container } from './style';
 import colors from '@constants/colors';
 
 const profileLinks: Array<{ id: string; link: string }> = [
   {
-    id: 'linkedin',
+    id: 'LinkedIn',
     link: 'https://www.linkedin.com/in/hyeongjo-cha-624b10244/',
   },
-  { id: 'github', link: 'https://github.com/gudwh14' },
+  { id: 'GitHub', link: 'https://github.com/gudwh14' },
 ];
 
 const introInfos: Array<{ id: string; value: string }> = [
@@ -26,14 +26,17 @@ function Intro() {
   return (
     <Wrapper>
       <div>
-        <DevText>Android Software Developer & FrontEnd Developer</DevText>
+        <DevText>Software Developer & Frontend Developer</DevText>
       </div>
 
       <div className="link-box">
-        {profileLinks.map(link => (
-          <Link key={link.id} onClick={() => window.open(link.link)}>
-            {link.id}
-          </Link>
+        {profileLinks.map(info => (
+          <InfoBox key={info.id}>
+            <span className="info-id">{info.id}.</span>
+            <Link key={info.id} onClick={() => window.open(info.link)}>
+              {info.link}
+            </Link>
+          </InfoBox>
         ))}
       </div>
 
@@ -67,7 +70,7 @@ const InfoBox = styled.div`
   .info-id {
     font-weight: 500;
     font-size: 1.3rem;
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
   }
 
   .info-value {
@@ -85,9 +88,7 @@ const Link = styled.span`
   display: inline-block;
   cursor: pointer;
   font-size: 1.2rem;
-  margin-right: 1rem;
-  font-weight: 300;
-  color: ${colors.highlight};
+  color: ${colors.link};
 `;
 
 export default Intro;
